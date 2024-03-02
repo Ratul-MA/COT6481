@@ -1,0 +1,77 @@
+version: "3.1"
+
+intents:
+  - greet
+  - ProvideBudgetingAdvice
+  - RetrieveAccountInfo
+  - check_balance
+  - transfer_funds
+  - pay_bills
+  - cancel_transaction
+  - affirm
+  - deny
+  - inform
+  - thanks
+  - goodbye
+  
+entities:
+  - account_number
+  - amount_of_money
+
+slots:
+  account_number:
+    type: text
+  amount_of_money:
+    type: float  
+  
+
+responses:
+   
+  utter_ProvideBudgetingAdvice:
+    - text: "Here are some budgeting tips:..."
+    
+  utter_RetrieveAccountInfo:
+    - text: "Here is your account information:..."
+    
+  utter_greet:
+    - text: "Hello! How can I assist you today?"
+
+  utter_check_balance:
+    - text: "Sure, let me check your account balance."
+
+  utter_transfer_funds:
+    - text: "Okay, let's transfer funds."
+
+  utter_pay_bills:
+    - text: "Sure, let's pay your bills."
+
+  utter_cancel_transaction:
+    - text: "Transaction canceled."
+
+  utter_affirm:
+    - text: "Great!"
+
+  utter_deny:
+    - text: "Alright."
+    
+  utter_thanks:
+    - text: "You're welcome!"
+    
+  utter_goodbye:
+    - text: "Goodbye! Have a great day."
+
+  utter_default:
+    - text: "I'm sorry, I didn't understand that. Can you please rephrase?"
+
+actions:
+  - utter_ProvideBudgetingAdvice
+  - utter_RetrieveAccountInfo
+  - utter_greet
+  - utter_check_balance
+  - utter_transfer_funds
+  - utter_pay_bills
+  - utter_cancel_transaction
+  - utter_affirm
+  - utter_deny
+  - utter_thanks
+  - utter_goodbye

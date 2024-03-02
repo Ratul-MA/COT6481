@@ -1,0 +1,167 @@
+version: "3.1"
+
+nlu:
+
+- intent: check_balance
+  examples: |
+    - What is my account balance?
+    - Can you tell me how much money I have?
+    - Check my balance please
+
+- intent: transfer_funds
+  examples: |
+    - I want to transfer money
+    - Transfer $50 from my savings to checking
+    - Move $100 to my checking account
+
+- intent: pay_bills
+  examples: |
+    - Pay my electricity bill
+    - Can you help me pay my rent?
+    - Pay $75 for internet service
+
+- intent: cancel_transaction
+  examples: |
+    - Cancel the transfer
+    - I changed my mind, don't transfer money
+    - Abort the transaction
+
+- intent: affirm
+  examples: |
+    - Yes
+    - Sure
+    - Okay
+
+- intent: deny
+  examples: |
+    - No
+    - I don't want to
+
+- intent: RetrieveAccountInfo
+  examples: |
+    - My account number is 123456
+    - I want to transfer $50 from my savings account
+    - Pay $75 for electricity
+    - Account information
+    - Information on my account
+
+- intent: thanks
+  examples: |
+    - Thank you
+    - Thanks a lot
+    - Thanks for your help
+
+- intent: goodbye
+  examples: |
+    - Goodbye
+    - Bye
+    - See you later
+
+# define the entities
+- regex: account_number
+  examples: |
+    - [0-9]{6,12}
+
+- regex: amount_of_money
+  examples: |
+    - \$(\d+(\.\d{1,2})?)
+    - [0-9]+ dollars
+    
+    
+- intent: ProvideBudgetingAdvice
+  examples: |
+    - Can you provide some budgeting tips?
+    - I need advice on budgeting
+    - How can I budget effectively?
+    - Help with budget
+    - Budgeting help 
+    - Advice with budget
+
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?

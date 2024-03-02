@@ -1,0 +1,67 @@
+stories:
+- story: User asks for budgeting advice
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: ProvideBudgetingAdvice
+    - action: action_provide_budgeting_advice
+ stories:
+- story: User asks for account info
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: RetrieveAccountInfo
+    - action: action_retrieve_account_info  
+    
+    
+stories:
+- story: greet and check balance
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: check_balance
+  - action: utter_check_balance
+
+- story: transfer funds
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: transfer_funds
+  - action: utter_transfer_funds
+
+- story: pay bills
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: pay_bills
+  - action: utter_pay_bills
+
+- story: cancel transaction
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: cancel_transaction
+  - action: utter_cancel_transaction
+
+- story: affirm
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: affirm
+  - action: utter_affirm
+
+- story: deny
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: deny
+  - action: utter_deny
+
+- story: thanks and goodbye
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: thanks
+  - action: utter_thanks
+  - intent: goodbye
+  - action: utter_goodbye
